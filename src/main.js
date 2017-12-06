@@ -4,7 +4,15 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+// 引入elementUI
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+
+// 引入font-awesome图标库
+import 'font-awesome-webpack'
+
 Vue.config.productionTip = false
+Vue.use(ElementUI)
 
 /* eslint-disable no-new */
 new Vue({

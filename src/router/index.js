@@ -22,6 +22,8 @@ import CategoryAdd from '@/components/admin/category/Add'
 
 // 博客前端首页
 import Index from '@/components/home/Index'
+// 博客前端文章列表页
+import HomeArticleList from '@/components/home/ArticleList'
 
 Vue.use(Router)
 
@@ -99,6 +101,13 @@ export default new Router({
       path: '/',
       name: '博客前端首页',
       component: Index,
+      left: false,
+      menuShow: false
+    },
+    {
+      path: '/article_list',
+      name: '博客前端文章列表页',
+      component: HomeArticleList,
       left: false,
       menuShow: false
     }

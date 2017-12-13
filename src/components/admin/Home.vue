@@ -19,7 +19,7 @@
     </el-row>
     <el-row :gutter="10" class="content">
       <el-col :xs="8" :sm="6" :md="4" :lg="4" :xl="2">
-        <el-menu class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose">
+        <el-menu class="el-menu-vertical-demo" router @open="handleOpen" @close="handleClose">
           <el-submenu v-for="(item,index) in $router.options.routes" :index="index+''" :key="index" v-if="item.menuShow">
             <template slot="title">
               <i :class="item.icon"></i>
